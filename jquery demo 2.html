@@ -36,7 +36,8 @@
         <script type="text/javascript">
 
             jQuery('#toggle_h1'). on ( 'click', function (event) {
-                jQuery('h1').delay( 3000 ).fadeToggle( ) ;
+                // 'linear' can also be 'swing'
+                jQuery('h1').animate ( { fontSize:'4em' }, 500, 'linear' ) ;
             } ) ;
 
         </script>
