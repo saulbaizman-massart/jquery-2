@@ -30,11 +30,50 @@
             Let us know what you think, share your ideas or contribute directly to the project.
         </p>
 
+        <form id="form1" name="form1" method="post" action="">
+            <p>
+                <label for="name">First name</label>
+                <input type="text" name="firstname" id="name" value="Saul" />
+            </p>
+            <p>
+                <label for="middlei">Middle Initial</label>
+                <input type="text" name="middlei" id="middlei" />
+            </p>
+            <p>
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname" value="Baizman" />
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" value="whatever@nowhere.com" />
+            </p>
+            <p>
+                <input type="checkbox" name="abc" id="abc" checked="checked" />
+                <label for="abc">Choice 1</label>
+                <input type="checkbox" name="abc" id="abc" />
+                <label for="abc">Choice 2</label>
+                <input type="checkbox" name="abc" id="abc" />
+                <label for="abc">Choice 3</label>
+            </p>
+            <p>
+                <input type="submit" name="submit" id="submit" value="Submit" />
+            </p>
+        </form>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
         <script type="text/javascript">
 
-                jQuery('h1').remove( ) ;
+            // Select h1 and store it in $h1.
+            var $h1 = jQuery('h1') ;
+
+            // Create a copy of $h1 and store it in $h1_copy.
+            var $h1_copy = $h1.clone( ) ;
+
+            // Select the form object and store it in $form.
+            var $form = jQuery( '#form1') ;
+
+            // Add value of $h1_copy after the $form.
+            $form.after ( $h1_copy ) ;
 
         </script>
 
