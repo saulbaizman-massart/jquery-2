@@ -42,37 +42,12 @@
 
         <script type="text/javascript">
 
-            console.group( 'h1 spacing properties' ) ;
-            console.log ( 'h1 padding: ' + jQuery('h1').css('padding') ) ;
-            console.log ( 'h1 border-width: ' + jQuery('h1').css('border-width') ) ;
-            console.log ( 'h1 margin: ' + jQuery('h1').css('margin') ) ;
-            console.groupEnd()
+            // The height of the document, including content outside the viewport, in pixels.
+            console.log ( "height of the document: " + jQuery(document).height() ) ;
 
-            console.group( 'h1 dimensions' ) ;
-            // the width of the h1 element, in pixels
-            console.log ( "width of the h1: " + jQuery('h1').width() ) ;
+            // The height of the browser window, in pixels.
+            console.log ( "height of the browser window: " + jQuery(window).height() ) ;
 
-            // the height of the h1 element, in pixels
-            console.log ( "height of the h1: " + jQuery('h1').height() ) ;
-
-            // the inner width of the h1 element, in pixels
-            console.log ( "inner width of the h1: " + jQuery('h1').innerWidth() ) ;
-
-            // the inner height of the h1 element, in pixels
-            console.log ( "inner height of the h1: " + jQuery('h1').innerHeight() ) ;
-
-            // the outer width of the h1 element, in pixels
-            console.log ( "outer width of the h1: " + jQuery('h1').outerWidth( ) ) ;
-
-            // the outer height of the h1 element, in pixels
-            console.log ( "outer height of the h1: " + jQuery('h1').outerHeight( ) ) ;
-
-            // the outer width of the h1 element, in pixels
-            console.log ( "outer width of the h1 (true): " + jQuery('h1').outerWidth( true ) ) ;
-
-            // the outer height of the h1 element, in pixels
-            console.log ( "outer height of the h1 (true): " + jQuery('h1').outerHeight( true ) ) ;
-            console.groupEnd()
 
         </script>
 
