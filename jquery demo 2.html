@@ -24,22 +24,33 @@
 
         <h1>GETTING STARTED WITH BRACKETS</h1>
         <h2>Get involved</h2>
-        <p><a href="#" id="toggle_h1">toggle the appearance of the h1 element, with a 3-second delay</a></p>
         <p>
             Brackets is an open-source project. Web developers from around the world are contributing to build
             a better code editor. Many more are building extensions that expand the capabilities of Brackets.
             Let us know what you think, share your ideas or contribute directly to the project.
         </p>
+        <ul>
+            <li><a class="link" href="http://brackets.io">Brackets.io</a></li>
+            <li><a class="link awesome" href="http://blog.brackets.io">Brackets Team Blog</a></li>
+            <li id="third_li"><a class="link" href="https://github.com/adobe/brackets">Brackets on GitHub</a></li>
+            <li><a class="link" href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a></li>
+            <li><a class="link awesome" href="https://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
+            <li><a class="link" href="https://groups.google.com/forum/#!forum/brackets-dev">Brackets Developer Mailing List</a></li>
+            <li><a class="link awesome" href="https://twitter.com/brackets">@brackets on Twitter</a></li>
+            <li>Chat with Brackets developers on IRC in <a class="link" href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
+        </ul>
+
+        <p><em>(Look in the Dev Console for the output.)</em></p>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
         <script type="text/javascript">
 
-            jQuery('#toggle_h1'). on ( 'click', function (event) {
-                // 'linear' can also be 'swing'
-                jQuery('h1').animate ( { fontSize:'4em' }, 500, 'linear' ) ;
-            } ) ;
+            // This is a bit of a silly example.
+            // find() finds descendants of the current selection.
+            var $find_selection = jQuery('ul').find('.awesome') ;
 
+            console.log ( $find_selection ) ;
         </script>
 
     </body>
