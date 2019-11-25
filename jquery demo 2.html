@@ -46,8 +46,11 @@
 
         <script type="text/javascript">
 
-            var $awesome_li = jQuery('li a').filter( '.awesome' ) ;
-            console.log ( $awesome_li ) ;
+            // select the first li element
+            console.log ( jQuery('li').eq(0) ) ;
+
+            // select li elements greater than the 4th list item
+            console.log ( jQuery('li:gt(3)') ) ;
 
         </script>
 
