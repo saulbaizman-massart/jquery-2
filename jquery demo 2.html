@@ -40,8 +40,10 @@
 
         <script type="text/javascript">
 
-            // Offset sets the 'top' and 'left' properties, and takes the element out of the flow.
-            jQuery( 'h1').offset( { 'top': 100, 'left':100 }) ;
+            var $my_own_name_for_jQuery = jQuery.noConflict ( ) ;
+
+            // Hide the h1 element, like we did for the first demo in this set.
+            $my_own_name_for_jQuery('h1').hide() ;
 
 
         </script>
